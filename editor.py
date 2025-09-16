@@ -102,7 +102,7 @@ def callback_mouse(evento, x, y, flags, param):
             cv2.circle(mascara_clareamento, (x_orig, y_orig), tamanho_pincel, (INTENSIDADE_PINCEL), -1, cv2.LINE_AA)
 
 # --- Programa Principal ---
-caminho_imagem = "C:\\Users\\leosz\\Downloads\\WhatsApp Image 2025-09-16 at 18.46.43.jpeg"
+caminho_imagem = ""
 img_original_full_res = cv2.imread(caminho_imagem)
 
 if img_original_full_res is None:
@@ -178,4 +178,5 @@ else:
                 print("Última alteração desfeita!")
             else:
                 print("Nada para desfazer.")
+
     cv2.destroyAllWindows()
